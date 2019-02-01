@@ -1,0 +1,570 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TheManaganator2017
+</name>
+</assembly>
+<members>
+<member name="T:TheManaganator2017.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:TheManaganator2017.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:TheManaganator2017.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:TheManaganator2017.CollectionClass.UserCollect">
+ <summary>
+ This sub is used to collect the users from the user table with the username and password
+ </summary>
+</member>
+<member name="M:TheManaganator2017.CollectionClass.RateCollection">
+ <summary>
+ This sub is used to collect the rates table for 
+ </summary>
+</member>
+<member name="M:TheManaganator2017.CollectionClass.PitchCollection">
+ <summary>
+ this collects all the pitches from the database. 
+ </summary>
+</member>
+<member name="M:TheManaganator2017.CollectionClass.LoadRateSpecific">
+ <summary>
+ This sub collects a specific rates information
+ </summary>
+</member>
+<member name="M:TheManaganator2017.CollectionClass.LoadUserSpecific">
+ <summary>
+ This sub collects a specific users information.
+ </summary>
+</member>
+<member name="M:TheManaganator2017.CollectionClass.LoadCustomerSpecific">
+ <summary>
+ collects a specific customers information for updating customers information. 
+ </summary>
+</member>
+<member name="M:TheManaganator2017.CollectionClass.CollectPassword">
+ <summary>
+ This sub collects the passwords from the database
+ </summary>
+</member>
+<member name="M:TheManaganator2017.ConnectMod.DBConnect">
+ <summary>
+ This provides my inital connection to the database. 
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.DataAdapter">
+ <summary>
+ This calls the data adpter stuff for the customer information, this is ran everytime customer
+ information is pulled out of the table, tblCustOne.
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.InvoiceDataAdpt">
+ <summary>
+ Calls the data adpater stuff and runs the sql for the getting the invoice number from the
+ database, specifcally the table tblInvoice
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.SearchCustDataAdpt">
+ <summary>
+ Calls the data adapter for searching and filling the results of the customer search
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.SearchPitchDataAdpt">
+ <summary>
+ This calls the data adpter and fills the search pitch dataset with the correctly searched data.
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.AddingPitchDa">
+ <summary>
+ This Sub is used to run the insert statement for adding a new pitch to the system
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.RemovePitchDa">
+ <summary>
+ used to get remove a pitch from the dataset
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.ResetInvoiceCountDa">
+ <summary>
+ used to run the insert for the invoice counter.
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.SearchUserDa">
+ <summary>
+ used to run the search select for the users.
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.AddUserDa">
+ <summary>
+ used to run the inserts for new users.
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.RemoveDataAdapter">
+ <summary>
+ used to remove various things
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.UpdateRateDa">
+ <summary>
+ used to run update rates
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.UpdateUserDa">
+ <summary>
+ used to update user information.
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.UpdateCustDa">
+ <summary>
+ used to run customer update statements.
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.PitchSpecificDa">
+ <summary>
+ used to get specific pitch information.
+ </summary>
+</member>
+<member name="M:TheManaganator2017.DataAdapterClass.UpdatePitchDa">
+ <summary>
+ used to run pitch update statments.
+ </summary>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.frmAdminMenu_Load(System.Object,System.EventArgs)">
+ <summary>
+ This is used to call in all the information to fill the two data grids on this form. 
+ 
+ This works for the prototype. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.btnInvoiceCounterReset_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub resets the invoice counter by making an invoice record that has a count set to zero and the time set
+ to the current time. When the counter is read, this new record will appear first and be used insted of the others.
+ 
+ This works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.btnAddUser_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is used to add a new user to the user table.
+ it works using an sql insert statement.
+ 
+ This section works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.btnRemoveUser_Click(System.Object,System.EventArgs)">
+ <summary>
+ This removes the user from the ID that the user of the system enters. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.btnRemoveRate_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub is used to remove rates from the rate table.
+ 
+ This does not fully function for jpined records.
+ 
+ This works for the prototype. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.btnSearchRate_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub is used to search though the rates to find the value that the user wants. 
+ 
+ Thos works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.btnUpdateRate_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is used to update rate information for existing records. 
+ 
+ This works for the prototype. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.btnUpdateUser_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub is used to update users 
+ 
+ This works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.btnAddRate_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub is used to add new rates to the rate table.
+ 
+ This works for the prototype. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.dgdRates_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ This is used to load a rate from the datagrid into the text boxes on the left side. 
+ 
+ This works for the prototype. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.dgdUsers_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ This is used to load a users information into the textboxes at the side from the datagrid. 
+ 
+ This works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.ValidateUserInfo">
+ <summary>
+ validates all the inputs for user inforamtion.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:TheManaganator2017.frmAdminMenu.ValidateRateInfo">
+ <summary>
+ validates all the rate inputs.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:TheManaganator2017.frmEmailForm.frmEmailForm_Load(System.Object,System.EventArgs)">
+ <summary>
+ This sub loads in all of the start up tasks needed for when the form loads. 
+ This contains the code for loading the customer information into the customer datagrid. 
+ 
+ This all works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmEmailForm.btnSend_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub is used to send the email to each individual client.
+ 
+ This section does work.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmEmailForm.btnAddRecipient_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub is used to add recipients to the list of recipients. 
+ 
+ This section works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmEmailForm.btnAddAll_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub is used to add all the clinets in the customer table to the email list.
+ 
+ This section fully works for the prototype
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmEmailForm.btnRemoveAll_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub is used to remove all ID's from the recipient list and clear the text box.
+ 
+ This fully works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmEmailForm.btnRemoveRecipient_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub routine is used to remove a user specified recipient from the list of recipients and output the new list
+ 
+ This section fully works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmLogIn.btnLogIn_Click(System.Object,System.EventArgs)">
+ <summary>
+ This section is used to run the login process when clicked. 
+ 
+ This section works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmLogIn.btnClear_Click(System.Object,System.EventArgs)">
+ <summary>
+ This button is used to clear both the text boxes on the login form. 
+ 
+ This section works perfectly fine for the post-prototype. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmLogIn.frmLogIn_Load(System.Object,System.EventArgs)">
+ <summary>
+ This code collects the log in infromation when the form starts
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmMainMenu.Form1_Load(System.Object,System.EventArgs)">
+ <summary>
+ This runs all the form startup tasks needed.
+ 
+ This section works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmMainMenu.btnCustomerMng_Click(System.Object,System.EventArgs)">
+ <summary>
+ When pressed the customer managment form will be loaded.
+ 
+ This works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmMainMenu.btnAdminMenu_Click(System.Object,System.EventArgs)">
+ <summary>
+ When pressed this opens the admin form. 
+ 
+ This works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmMainMenu.btnRenewalMng_Click(System.Object,System.EventArgs)">
+ <summary>
+ When pressed this will open the renewal managment form.
+ 
+ This works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmMainMenu.btnPitchMng_Click(System.Object,System.EventArgs)">
+ <summary>
+ When pressed the pitch management form will open.
+ 
+ This works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmMainMenu.frmMainMenu_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+ <summary>
+ This ensures that when this form is closed the whole program is closed.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.btnEmail_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub will open the email form when the email button is pressed. 
+ 
+ This section works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.frmCustMang_Load(System.Object,System.EventArgs)">
+ <summary>
+ The sub that loads in all the required information when the form is opened, such as the 
+ loading of the invoice counter and the loading of the datagrid table. 
+ 
+ All of the parts in this section work for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.btnAddCust_Click(System.Object,System.EventArgs)">
+ <summary>
+ The following sub routine is used to add a new customer to the customer table. 
+ 
+ This section works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.btnNextInvoice_Click(System.Object,System.EventArgs)">
+ <summary>
+ This following sub routine is used to update the invoice counter when the button is pressed to indicate that it
+ has moved along. It updates the database and runs the request code to get that value from the database again as it did when the form loaded in. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.btnSearch_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub is used to search the dataset for sepcific information, and will leave the entire record if 
+ anything in the record matches the search criteria.
+ 
+ This section works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.btnRemove_Click(System.Object,System.EventArgs)">
+ <summary>
+ The following sub is used to remove a preset customer when the remove button is pressed. 
+ 
+ This section works for the prototype. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.dgdCustomers_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ This loads the customer information of the currently selected customer into the textboxes on the side.
+ 
+ This section works for the prototype. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.btnUpdate_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub is used to update customer information when the update button is pressed.
+ 
+ This section works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.btnFormInvoice_Click(System.Object,System.EventArgs)">
+ <summary>
+ The following sub is ran to display the inforamtion forming an invoice for the currently selected customer
+ 
+ This works for the final version.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.btnContract_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is used to show the information to make a contract for the currently selected customer. 
+ 
+ This works for the final version.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.ValidateInputs">
+ <summary>
+ This function is used to validate all the inputs for customer information. 
+ 
+ This all works for the final version.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:TheManaganator2017.frmPitchMang.frmPitchMang_Load(System.Object,System.EventArgs)">
+ <summary>
+ The information for the datgrid is loaded in from the databse.
+ 
+ This section works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmPitchMang.btnSearchPitch_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is used to search the whole pitch data set for a user set criteria. 
+ 
+ This works for the prototype. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmPitchMang.btnAddPitch_Click(System.Object,System.EventArgs)">
+ <summary>
+ This sub is used to add pitches to the pitch table in the database. 
+ 
+ This works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmPitchMang.btnRemovePitch_Click(System.Object,System.EventArgs)">
+ <summary>
+ This is used to remove pitches completly from the pitch table. 
+ 
+ This works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmPitchMang.dgdPitches_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ This is used to load whatever pitch is selected into the text boxes on the side. 
+ 
+ This works for the prototype. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmPitchMang.btnUpdatePitch_Click(System.Object,System.EventArgs)">
+ <summary>
+ This updates the currently selected pitch with the infroamtion changed in the side text boxes.
+ 
+ This works for the prototype.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmPitchMang.ValidatePitchInputs">
+ <summary>
+ this validates all the inputs for the pitches
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:TheManaganator2017.frmRenewalManagement.frmRenewalManagement_Load(System.Object,System.EventArgs)">
+ <summary>
+ This sub loads the custome rdata into the datagrid.
+ 
+ This all works for the prototype.
+ this all works for the final version now.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.InvoiceNoClass.GiveInvoiceNo">
+ <summary>
+ This returns the value for the invoice number.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:TheManaganator2017.InvoiceNoClass.InvoiceCounterLoad">
+ <summary>
+ This is used to get the invoice number out of the invocie table. 
+ 
+ This works for the prototype.
+ </summary>
+</member>
+</members>
+</doc>

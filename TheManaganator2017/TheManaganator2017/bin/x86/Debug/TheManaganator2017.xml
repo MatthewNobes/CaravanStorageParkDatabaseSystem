@@ -1,0 +1,67 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TheManaganator2017
+</name>
+</assembly>
+<members>
+<member name="T:TheManaganator2017.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:TheManaganator2017.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:TheManaganator2017.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:TheManaganator2017.CollectionClass.RateCollection">
+ <summary>
+ This sub is used to collect the rates table for 
+ </summary>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.btnAddCust_Click(System.Object,System.EventArgs)">
+ <summary>
+ The following sub routine is used to add a new customer to the customer table. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.btnNextInvoice_Click(System.Object,System.EventArgs)">
+ <summary>
+ This following sub routine is used to update the invoice counter when the button is pressed to indicate that it
+ has moved along. It updates the database and runs the request code to get that value from the database again as it did when the form loaded in. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmCustMang.btnRemove_Click(System.Object,System.EventArgs)">
+ <summary>
+ The following sub is used to remove a preset customer when the remove button is pressed. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmPitchMang.frmPitchMang_Load(System.Object,System.EventArgs)">
+ <summary>
+ The information for the datgrid is loaded in from the databse.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:TheManaganator2017.frmRenewalManagement.frmRenewalManagement_Load(System.Object,System.EventArgs)">
+ <summary>
+ This sub loads the custome rdata into the datagrid.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+</members>
+</doc>
